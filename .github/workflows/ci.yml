@@ -11,7 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - args: '"applybuilderJS/test:run" "applybuilderJVM/test:run"'
+          - args: '"+ applybuilderJS/test:run" "+ applybuilderJVM/test:run"'
           - args: '"++ 2.11.12!" "applybuilderNative/test:run"'
             name: scala-native
     steps:
